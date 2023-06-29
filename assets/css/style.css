@@ -1,0 +1,121 @@
+:root {
+    --color1: #1446a0;
+    --color2: #db3069;
+    --color3: #f5d547;
+    --color4: #ebebd3;
+    --color5: #3c3c3b;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+    background-color: var(--color5);
+    color: var(--color4);
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+
+#listArea {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+#listArea input {
+    background: var(--color4);
+    font-weight: bold;
+}
+
+#listArea .btn.btn-dark {
+    border: 1px solid #fff;
+    transition: all ease 0.3s;
+}
+#listArea .btn.btn-dark:hover {
+    background-color: var(--color2);
+}
+
+.row {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+ul li {
+    background-color: var(--color3);
+    color: var(--color5);
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px #0000004a;
+}
+
+h4,
+h6 {
+    margin: 0;
+}
+
+h4 {
+    padding-top: 5px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+li h6 {
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #fff;
+}
+
+#clashesArea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.clashes {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+}
+
+.x {
+    font-size: 2em;
+    filter: contrast(2);
+}
+
+.team1,
+.team2 {
+    background-color: var(--color2);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.team2 {
+    background-color: var(--color1);
+}
+
+.template {
+    display: none;
+}
